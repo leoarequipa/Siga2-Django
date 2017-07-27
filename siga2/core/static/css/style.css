@@ -1,0 +1,89 @@
+	@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+	@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+	@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+	h3 a {
+		text-align: center;
+		color: #DADDD8!important;
+		font-family: 'Permanent Marker' !important;
+	}
+
+	h1 {
+		text-align: center;
+		color: #DADDD8!important;
+		font-family: 'Permanent Marker' !important;
+	}
+
+	small {
+		color: #DADDD8 !important;
+	}
+
+	.panel {
+		width: 370px;
+		height: auto;
+		font-size: 25px;
+		text-align: left;
+		color: #FAE8EB;
+		background: #FF7400!important;
+		font-family: 'Permanent Marker' !important;
+	}
+	
+	.jumbotron {
+	background: url(https://cdn.discordapp.com/attachments/323577212009840640/323577329668325376/mimg2.png);
+	height: 350px;
+	}
+
+	/* Style all font awesome icons */
+	.fa {
+    	padding: 20px;
+    	font-size: 35px;
+	    width: 70px;
+	    text-align: center;
+	    text-decoration: none;
+	    border-radius: 10%;
+	}
+
+		/* Facebook */
+	.fa-facebook {
+	    background: #FF7400;
+	    color: #FAE8EB;
+	}
+
+
+	.fa-skype {
+	    background: #FF7400;
+	    color: #FAE8EB;
+	}
+
+	body {
+		margin:20px;
+		padding:45px;
+		border:2px solid white;
+		background: #DADDD8 !important;
+	}
+
+	.bg-danger {
+		margin-right: 1500px;
+		margin-left: 0px;
+		padding: 10px;
+		text-align:center;
+	}
+
+
+	.img-circle {
+		width: 215px;
+		margin:40px;
+		padding:1px;
+		border:1.5px solid #DADDD8;
+	}
+
+	img {
+		width:1024px;
+		height:576px;
+	}
+
+	texto {
+		font-size: 20px;
+		font-family: 'Ubuntu';
+		color: #272822;
+	}

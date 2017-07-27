@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="pt">
+
+<head>
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Entschüldigung!</title>
+
+	
+		<div class="jumbotron">
+			<h1>CADASTRO</h1><h3 align="center"><a href="/">INÍCIO</a></h3>
+		</div>
+</head>
+
+<body>
+	<!--<div class="panel">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<b>QUEM SOU EU</b>
+	</div>
+	<texto>
+		Um baiano morando em Recife, atualmente no {{periodo}}º período de {{curso}} na UFPE<br><br><br>
+	</texto>
+
+	<div class="panel">
+		<i class="fa fa-code" aria-hidden="true"></i>
+		<b>CODING SKILLS</b>
+	</div>
+	<texto>
+		<ul type = "square">
+			{% for skill in code %}
+				<li>{{skill}}
+					{% if skill == 'C' %}
+					(++)
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul><br/>
+	</texto>
+	
+	<div class="panel">
+		<i class="fa fa-mortar-board" aria-hidden="true"></i>
+		<b>CURRICULUM</b>
+	</div>
+	<texto>
+		<ul type = "square">
+			{% for item in curriculum %}
+				<li>{{item}}</li>
+			{% endfor %}
+		</ul><br/>
+	</texto>
+
+	<div class="panel">
+		<i class="fa fa-smile-o" aria-hidden="true"></i>
+		<b>HOBBIES</b>
+	</div>
+	<texto>
+		<ul type = "square">
+			{% for hobbie in hobbies %}
+				<li>{{hobbie}}</li>
+			{% endfor %}
+		</ul><br/>
+	</texto>
+
+	<div class="panel">
+		<i class="fa fa-envelope" aria-hidden="true"></i>
+		<b>CONTATO</b>
+	</div>
+	<texto>
+		<ul type = "square">
+			<li>mvmf@cin.ufpe.br</li>
+		</ul>
+	</texto>-->
+
+	{% if msg %}
+	<h3>{{msg}}</h3>
+	{% endif %}
+
+	<form enctype="multipart/form-data" action="" method="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit">Submit</button>
+	</form>
+	
+</body>
+
+</html>

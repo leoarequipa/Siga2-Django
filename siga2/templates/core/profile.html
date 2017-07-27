@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="pt">
+
+<head>
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Entschüldigung!</title>
+	<style>
+	h2 {
+		font-family: 'Permanent Marker' !important;
+	}
+
+	h4 {
+		font-family: 'Verdana' !important;
+	}
+
+	</style>
+	
+		<div class="jumbotron">
+			<h1>OLÁÁÁ!</h1>
+			<h3 align="center"><a href="/">INÍCIO</a></h3>
+		</div>
+</head>
+
+<body>
+	
+	<h2>Olá, {{user.username}}!!</h2><br/><h4>Beleza??</h4>
+	<br/>
+	<h4>Seu nome é {{user.aluno.nome}}, e você nasceu em {{user.aluno.data_de_nascimento}} :)</h4>
+	<br/>
+	<h2><a href="{% url 'logout' %}">LOGOUT</a></h2>
+	
+</body>
+
+</html>
